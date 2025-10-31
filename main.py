@@ -11,7 +11,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # --- 1. 모듈 임포트 ---
-# 우리가 만든 .py 파일들을 임포트합니다.
 try:
     import ocr_processor
     import api_clients
