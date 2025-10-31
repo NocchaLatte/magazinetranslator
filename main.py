@@ -86,7 +86,7 @@ def setup_directories_and_unzip():
 async def process_page(session: httpx.AsyncClient, image_path: Path):
     """
     단일 이미지 페이지 파이프라인 (PaddleOCR -> Azure 번역)
-    [수정] Gemini 검증 단계가 제거되었습니다.
+    [수정] Gemini 검증 단계가 제거되었습니다. // 나중에 더 좋은 방법을 찾아볼 예정
     """
     
     # [수정] Semaphore 값을 다시 5 (또는 그 이상)로 돌려도 됩니다.
