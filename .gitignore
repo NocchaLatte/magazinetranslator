@@ -7,3 +7,8 @@ __pycache__/
 
 # Secrets
 .env
+
+# sample inputs, outputs
+01_input_zips/*
+02_temp_images/*
+03_output_results/*
