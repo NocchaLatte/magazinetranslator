@@ -111,7 +111,11 @@ async def process_page(session: httpx.AsyncClient, image_path: Path):
         print(f"[OCR 완료] {image_path.name}: {len(structured_data)}개의 텍스트 블록 발견.")
         
         processed_blocks_output = [] # 최종 결과(번역된 블록)를 담을 리스트
-
+        """
+        나중에 검증 과정이 여기에 추가될 예정입니다
+        ocr 결과가 너무 성능이 안나와 ;.; 
+        """
+        
         # --- [수정] 2단계: 번역 (Gemini 없이 바로 번역) ---
         
         for i, block in enumerate(structured_data):
